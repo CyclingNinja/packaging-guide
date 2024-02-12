@@ -33,9 +33,10 @@ open_astronomy_package_template_example = "{{ cookiecutter.module_name }}.exampl
 
 {% endif -%}
 [project.optional-dependencies]
-test = [
+tests = [
     "pytest",
     "pytest-doctestplus",
+    "pytest-cov",
 ]
 docs = [
     "sphinx",
@@ -102,5 +103,5 @@ exclude_lines = [
   # Ignore branches that don't pertain to this version of Python
   "pragma: py{ignore_python_version}",
   # Don't complain about IPython completion helper
-  "def _ipython_key_completions_", 
+  "def _ipython_key_completions_",
 ]
